@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+<include file="$(find simstage_group1)/launch/reactive.launch"/>
+ <arg name="map_name" default="rooms"/>
+
+    
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen"/>
+
+</launch>

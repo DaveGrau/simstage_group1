@@ -1,0 +1,6 @@
+<launch>
+  <arg name="world_file" default="$(find simstage_group1)/world/move_base_arena.world"/>
+  <node pkg="stage_ros" type="stageros" name="stageros" args="$(arg world_file)" output="screen"/>
+
+</launch>
+
